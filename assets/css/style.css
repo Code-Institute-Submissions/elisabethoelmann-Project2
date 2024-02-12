@@ -41,3 +41,80 @@ body {
     .color5 {
         color:purple;
     }
+/* rules area */
+.rules-area {
+    text-align: center;
+    padding: 50px 50px 20px 50px;
+}
+
+#open {
+    font-family: 'EB Garamont', serif;
+    margin: 2rem;
+    background-color: #00ff91;
+    font-size: 1.8rem;
+    font-weight: bold;
+    width: 200px;
+    height: 60px;
+    color: #040a84;
+    cursor: pointer;
+    box-shadow: 3px 3px #A3ACBD, 2px 2px #A3ACBD, 1px 1px #A3ACBD;
+    padding: 10px;
+    text-align: center;
+}
+
+.rules {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.rules-header {
+    background-color: #00ff91;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #262223;
+    width: 70%;
+}
+.rules-content {
+    background-color: white;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70%;
+    height: auto;
+}
+.rules-content > h4 {
+    font-size: 30px;
+    letter-spacing: 10px;
+    padding-bottom: 10px;
+}
+.rules-content > p {
+    line-height: 30px;
+    font-size: 25px;
+}
+
+.rules-header h4 {
+    margin: 0;
+    font-size: 30px;
+}
+
+.close {
+    color: #404040;
+    float: right;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1rem;
+}
+
+.close:hover, .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bolder;
+}
