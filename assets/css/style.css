@@ -1,0 +1,43 @@
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=EB+Garamond:ital@0;1&display=swap');
+
+/*Asterisk wildcard selector to override default styles added by the browser*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  /* general styles */
+  header {
+    background-color: beige;
+    font-family: 'Annie Use Your Telescope';
+    }
+
+body {
+    background-image: linear-gradient(to right, rgb(171, 203, 240), rgb(5, 25, 136));
+    font-family:'EB Garamont', serif;
+    }
+
+    header > h1 {
+        text-align: center;
+        word-spacing: 1.5rem;
+        letter-spacing: 0.3rem;
+        font-size: 4rem;
+        font-weight: bold;
+    }
+    .color1 {
+        color:#000
+    }
+    .color2 {
+        color: brown;
+    }
+    .color3 {
+        color: red;
+    }
+    .color4 {
+        color: rgb(123, 202, 5);
+    }
+    .color5 {
+        color:purple;
+    }
