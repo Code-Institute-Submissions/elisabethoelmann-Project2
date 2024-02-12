@@ -144,3 +144,64 @@ let computerScore = 0;
  }
  
  main();
+
+ //the timer area
+
+const timer = document.getElementById('timer');
+let timerInterval;
+let isTimerRunning = false;
+let clickCount = 0;
+
+function startTimer() {
+   clearInterval(timerInterval);
+   let second = 0;
+   let minute = 0;
+   let hour = 0;
+
+   timerInterval = setInterval(function() {
+      timer.innerHTML = 
+        (hour ? hour + ':' : '') +
+        (minute < 10 ? '0' + minute : minute) +
+        ':' +
+        (second < 10 ? '0' + second : second);
+        second++;
+        if (second == 60) {
+           minute++;
+           second = 0;
+        }
+        if (minute == 60) {
+           hour++;
+           minute = 0;
+        }
+   }, 1000);
+   isTimerRunning = true;
+}
+
+function stopAndShowTime() {
+   clearInterval(timerInterval);
+   isTimerRunning = false;
+}
+
+function resetTimer() {
+  clearInterval(timerInterval);
+  timer.innerHTML = '00:00';
+  clickCount = 0;
+}
+
+function startAndStopTimer() {
+  clickCount++;
+  if (clickCount === 2){
+    stopAndShowTime();
+  } else if (clickCount === 3) {
+    resetTimer();
+  }
+  else {
+    if (isTimerRunning) {
+    stopAndShowTime();
+  } else {
+        startTimer();
+      }
+    }
+  }
+  
+  
