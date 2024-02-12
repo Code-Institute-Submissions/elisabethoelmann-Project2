@@ -41,6 +41,7 @@ body {
     .color5 {
         color:purple;
     }
+
 /* rules area */
 .rules-area {
     text-align: center;
@@ -117,4 +118,43 @@ body {
     text-decoration: none;
     cursor: pointer;
     font-weight: bolder;
+}
+
+/* "Start-the-action" area */
+
+#play-action {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: rgb(3, 23, 122);
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'EB Garamont', serif;
+    background-color: #00ff91;
+    min-height: 100px;
+    padding-top: 10px;
+}
+
+#play-action p {
+    display: block;
+    padding: 10px;
+}
+#action-message {
+    display: block;
+    background-color: yellow;
+}
+
+/* "picture-choice" area */
+.choices {
+    text-align: center;
+    margin: 50px 0;   
+}
+
+.choice {
+    display: inline-block;
+    padding: 20px;
+  
+}
+.choice:hover {
+    cursor: pointer;
 }
