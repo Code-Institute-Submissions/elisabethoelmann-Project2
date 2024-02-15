@@ -35,37 +35,37 @@
   let isTimerRunning = false;
   let clickCount = 0;
 
-  // functions
+// functions
   
   //functions of the rules open and close
 
   btn.addEventListener('click', function() {
-    rules.style.display = "block";
-    });
-   
-    span.addEventListener('click', function() {
-    rules.style.display = 'none';
-    });
-   
-    window.addEventListener('click', function(event) {
-    if (event.target == rules) {rules.style.display = "none";}
-    });
-  
-  //functions of the score area
-  
-    function resetScores() {
-    playerScore = 0;
-    computerScore = 0;
-    playerScore_span.innerText = 0;
-    computerScore_span.innerText = 0;
-    resulttime_p.innerText = "";
-    }
-   
-    resetGame_div.addEventListener('click', function() {
-    resetScores() 
-    });
+  rules.style.display = "block";
+  });
+ 
+  span.addEventListener('click', function() {
+  rules.style.display = 'none';
+  });
+ 
+  window.addEventListener('click', function(event) {
+  if (event.target == rules) {rules.style.display = "none";}
+  });
 
-      //functions of the picture choice area
+//functions of the score area
+
+  function resetScores() {
+  playerScore = 0;
+  computerScore = 0;
+  playerScore_span.innerText = 0;
+  computerScore_span.innerText = 0;
+  resulttime_p.innerText = "";
+  }
+ 
+  resetGame_div.addEventListener('click', function() {
+  resetScores() 
+  });
+
+   //functions of the picture choice area
 
   function getComputerChoice() {
     const choices = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
@@ -128,59 +128,59 @@ function game(playerChoice) {
   }
   
   main();
+ 
+  //functions of the timer area
 
-   //functions of the timer area
-
-   function startTimer() {
-    clearInterval(timerInterval);
-    let second = 0;
-    let minute = 0;
-    let hour = 0;
- 
-    timerInterval = setInterval(function() {
-       timer.innerHTML = 
-         (hour ? hour + ':' : '') +
-         (minute < 10 ? '0' + minute : minute) +
-         ':' +
-         (second < 10 ? '0' + second : second);
-         second++;
-         if (second == 60) {
-            minute++;
-            second = 0;
-         }
-         if (minute == 60) {
-            hour++;
-            minute = 0;
-         }
-    }, 1000);
-    isTimerRunning = true;
-   }
- 
-   function stopAndShowTime() {
-    clearInterval(timerInterval);
-    isTimerRunning = false;
-   }
- 
-   function resetTimer() {
+  function startTimer() {
    clearInterval(timerInterval);
-   timer.innerHTML = '00:00';
-   clickCount = 0;
-   }
- 
-   function startAndStopTimer() {
-   clickCount++;
-   if (clickCount === 2){
-     stopAndShowTime();
-   } else if (clickCount === 3) {
-     resetTimer();
-   }
-   else {
-     if (isTimerRunning) {
-     stopAndShowTime();
-   } else {
-         startTimer();
-       }
-     }
-   }
-   
-   
+   let second = 0;
+   let minute = 0;
+   let hour = 0;
+
+   timerInterval = setInterval(function() {
+      timer.innerHTML = 
+        (hour ? hour + ':' : '') +
+        (minute < 10 ? '0' + minute : minute) +
+        ':' +
+        (second < 10 ? '0' + second : second);
+        second++;
+        if (second == 60) {
+           minute++;
+           second = 0;
+        }
+        if (minute == 60) {
+           hour++;
+           minute = 0;
+        }
+   }, 1000);
+   isTimerRunning = true;
+  }
+
+  function stopAndShowTime() {
+   clearInterval(timerInterval);
+   isTimerRunning = false;
+  }
+
+  function resetTimer() {
+  clearInterval(timerInterval);
+  timer.innerHTML = '00:00';
+  clickCount = 0;
+  }
+
+  function startAndStopTimer() {
+  clickCount++;
+  if (clickCount === 2){
+    stopAndShowTime();
+  } else if (clickCount === 3) {
+    resetTimer();
+  }
+  else {
+    if (isTimerRunning) {
+    stopAndShowTime();
+  } else {
+        startTimer();
+      }
+    }
+  }
+  
+  

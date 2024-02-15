@@ -43,260 +43,264 @@ body {
     }
 
 /* rules area */
-.rules-area {
-    text-align: center;
-    padding: 50px 50px 20px 50px;
-}
+    .rules-area {
+        text-align: center;
+        padding: 50px 50px 20px 50px;
+    }
+    
+    #open {
+        font-family: 'EB Garamont', serif;
+        margin: 2rem;
+        background-color: #00ff91;
+        font-size: 1.8rem;
+        font-weight: bold;
+        width: 200px;
+        height: 60px;
+        color: #040a84;
+        cursor: pointer;
+        box-shadow: 3px 3px #A3ACBD, 2px 2px #A3ACBD, 1px 1px #A3ACBD;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    .rules {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+    }
+    
+    .rules-header {
+        background-color: #00ff91;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #262223;
+        width: 70%;
+    }
+    .rules-content {
+        background-color: white;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 70%;
+        height: auto;
+    }
+    .rules-content > h4 {
+        font-size: 30px;
+        letter-spacing: 10px;
+        padding-bottom: 10px;
+    }
+    .rules-content > p {
+        line-height: 30px;
+        font-size: 25px;
+    }
+    
+    .rules-header h4 {
+        margin: 0;
+        font-size: 30px;
+    }
+    
+    .close {
+        color: #404040;
+        float: right;
+        font-size: 2rem;
+        font-weight: bold;
+        line-height: 1rem;
+    }
+    
+    .close:hover, .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+        font-weight: bolder;
+    }
 
-#open {
-    font-family: 'EB Garamont', serif;
-    margin: 2rem;
-    background-color: #00ff91;
-    font-size: 1.8rem;
-    font-weight: bold;
-    width: 200px;
-    height: 60px;
-    color: #040a84;
-    cursor: pointer;
-    box-shadow: 3px 3px #A3ACBD, 2px 2px #A3ACBD, 1px 1px #A3ACBD;
-    padding: 10px;
-    text-align: center;
-}
+    /* "Start-the-action" area */
 
-.rules {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    padding-top: 100px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-}
+    #play-action {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        color: rgb(3, 23, 122);
+        font-size: 30px;
+        font-weight: bold;
+        font-family: 'EB Garamont', serif;
+        background-color: #00ff91;
+        min-height: 100px;
+        padding-top: 10px;
+    }
 
-.rules-header {
-    background-color: #00ff91;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #262223;
-    width: 70%;
-}
-.rules-content {
-    background-color: white;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 70%;
-    height: auto;
-}
-.rules-content > h4 {
-    font-size: 30px;
-    letter-spacing: 10px;
-    padding-bottom: 10px;
-}
-.rules-content > p {
-    line-height: 30px;
-    font-size: 25px;
-}
+    #play-action p {
+        display: block;
+        padding: 10px;
+    }
+    #action-message {
+        display: block;
+        background-color: yellow;
+    }
 
-.rules-header h4 {
-    margin: 0;
-    font-size: 30px;
-}
+    /* "play-choice" area */
+    .choices {
+        text-align: center;
+        margin: 50px 0;   
+    }
 
-.close {
-    color: #404040;
-    float: right;
-    font-size: 2rem;
-    font-weight: bold;
-    line-height: 1rem;
-}
+    .choice {
+        display: inline-block;
+        padding: 20px;
+      
+    }
+    .choice:hover {
+        cursor: pointer;
+    }
 
-.close:hover, .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-    font-weight: bolder;
-}
-
-/* "Start-the-action" area */
-
-#play-action {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    color: rgb(3, 23, 122);
-    font-size: 30px;
-    font-weight: bold;
-    font-family: 'EB Garamont', serif;
-    background-color: #00ff91;
-    min-height: 100px;
-    padding-top: 10px;
-}
-
-#play-action p {
-    display: block;
-    padding: 10px;
-}
-#action-message {
-    display: block;
-    background-color: yellow;
-}
-
-/* "picture-choice" area */
-.choices {
-    text-align: center;
-    margin: 50px 0;   
-}
-
-.choice {
-    display: inline-block;
-    padding: 20px;
+    .green-glow {
+        border: 4px solid rgb(9, 128, 0);
+        box-shadow: 0 0 40px rgb(1, 255, 22);
+    }
+    
+    .red-glow {
+        border: 4px solid rgb(247, 4, 4);
+        box-shadow: 0 0 40px rgb(255, 48, 48);
+    }
+    .yellow-glow {
+        border: 4px solid rgb(246, 234, 11);
+        box-shadow: 0 0 40px rgba(255, 247, 0, 0.404);
+    }
+   
   
-}
-.choice:hover {
-    cursor: pointer;
-}
+    /* score area */
 
-/* score area */
+    .score-board {
+        margin: 20px auto;
+        border: 3px solid: #040a84;
+        border-radius: 5px;
+        height:120px;
+        width: 300px;
+        text-align: center;
+        font-size: 32px;
+        padding: 30px 20px;
+        font-family: 'EB Garamont', sans-serif;
+        position: relative;
+        background-color: yellow;
+    }
 
-.score-board {
-    margin: 20px auto;
-    border: 3px solid: #040a84;
-    border-radius: 5px;
-    height:120px;
-    width: 300px;
-    text-align: center;
-    font-size: 32px;
-    padding: 30px 20px;
-    font-family: 'EB Garamont', sans-serif;
-    position: relative;
-    background-color: yellow;
-}
+    #player-score {
+        color; rgb(2, 2, 98);
+        text-align: center;
+        font-size: 45px;
+        padding: 30px 20px;
+    }
 
-#player-score {
-    color; rgb(2, 2, 98);
-    text-align: center;
-    font-size: 45px;
-    padding: 30px 20px;
-}
+    #computer-score {
+        color: rgb(2, 2, 98);
+        text-align: center;
+        font-size: 45px;
+        padding: 30px 20px;
+    }
 
-#computer-score {
-    color: rgb(2, 2, 98);
-    text-align: center;
-    font-size: 45px;
-    padding: 30px 20px;
-}
+    .badge {
+        background-color: rgba(3, 7, 85, 0.692);
+        padding: 2px 10px;
+    }
 
-.badge {
-    background-color: rgba(3, 7, 85, 0.692);
-    padding: 2px 10px;
-}
+    #player-label {
+        position: absolute;
+        top: 30px;
+        left: -60px;
+        color: white;
+        background-color: rgb(5, 5, 120);
+    }
 
-#player-label {
-    position: absolute;
-    top: 30px;
-    left: -60px;
-    color: white;
-    background-color: rgb(5, 5, 120);
-}
+    #computer-label {
+        position: absolute;
+        top: 30px;
+        right: -80px;
+        color: white;
+        background-color: rgb(5, 5, 120);
+    }
 
-#computer-label {
-    position: absolute;
-    top: 30px;
-    right: -80px;
-    color: white;
-    background-color: rgb(5, 5, 120);
-}
-.green-glow {
-    border: 4px solid rgb(9, 128, 0);
-    box-shadow: 0 0 40px rgb(1, 255, 22);
-}
+     /* set the time area */
+    .resulttime {
+        font-size: 40px;
+        color: white;
+    }
+    .resulttime > p {
+        text-align: center;
+        padding: 50px;
+    }
+    #messages {
+        font-size: 2rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        font-size: 2rem;
+        text-align: center;
+    }
+    #reset-game {
+        font-size: 2rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        font-size: 2rem;
+        text-align: center;
+        color: rgb(2, 2, 91);
+        background-color: yellow;
+        width: 500px;
+        margin: 0 auto;
+    }
 
-.red-glow {
-    border: 4px solid rgb(247, 4, 4);
-    box-shadow: 0 0 40px rgb(255, 48, 48);
-}
-.yellow-glow {
-    border: 4px solid rgb(246, 234, 11);
-    box-shadow: 0 0 40px rgba(255, 247, 0, 0.404);
-}
+    #timer {
+        margin-bottom: 25px;
+        font-size: 2rem;
+        font-weight: bold;
+        color: #7CFC00;
+    }
 
- /* set the time area */
- .resulttime {
-    font-size: 40px;
-    color: white;
-}
-.resulttime > p {
-    text-align: center;
-    padding: 50px;
-}
-#messages {
-    font-size: 2rem;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    font-size: 2rem;
-    text-align: center;
-}
-#reset-game {
-    font-size: 2rem;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    font-size: 2rem;
-    text-align: center;
-    color: rgb(2, 2, 91);
-    background-color: yellow;
-    width: 500px;
-    margin: 0 auto;
-}
+    .button-container {
+        text-align: center;
+        padding-top:30px;
+        width: 500px;
+        margin: 0 auto;
+    }
+    .question {
+        font-size: 25px;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        color: rgb(4, 53, 137);
+        background-color: yellow;
+        width: 500px;
+        padding: 5px;
+        display:block;
+    }
+    .set {
+        font-size: 25px;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        color: rgb(4, 53, 137);
+        background-color: #00ff91;
+        width: 500px;
+        padding: 5px;
+        display: block;
+    }
 
-#timer {
-    margin-bottom: 25px;
-    font-size: 2rem;
-    font-weight: bold;
-    color: #7CFC00;
-}
-
-.button-container {
-    text-align: center;
-    padding-top:30px;
-    width: 500px;
-    margin: 0 auto;
-}
-.question {
-    font-size: 25px;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    color: rgb(4, 53, 137);
-    background-color: yellow;
-    width: 500px;
-    padding: 5px;
-    display:block;
-}
-.set {
-    font-size: 25px;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    color: rgb(4, 53, 137);
-    background-color: #00ff91;
-    width: 500px;
-    padding: 5px;
-    display: block;
-}
-
-.timer-button {
-    font-family: 'EB Garamont', serif;
-    margin: 1.5rem;
-    background-color: #00ff91;
-    font-size: 25px;
-    color: rgb(4, 53, 137);
-    width: 200px;
-    height: 80px;
-    cursor: pointer;
-    box-shadow: 3px 3px #A3ACBD, 2px 2px #A3ACBD, 1px 1px #A3ACBD;
-    padding: 10px;
-}
+    .timer-button {
+        font-family: 'EB Garamont', serif;
+        margin: 1.5rem;
+        background-color: #00ff91;
+        font-size: 25px;
+        color: rgb(4, 53, 137);
+        width: 200px;
+        height: 80px;
+        cursor: pointer;
+        box-shadow: 3px 3px #A3ACBD, 2px 2px #A3ACBD, 1px 1px #A3ACBD;
+        padding: 10px;
+    }
+    
+    
 /* Responsive layout for screens, smaller than 600 px */
 
 @media (max-width: 600px) {
@@ -367,6 +371,20 @@ body {
         padding:20px;
     }
 
+    .green-glow {
+        border: 4px solid rgb(9, 128, 0);
+        box-shadow: 0 0 40px rgb(1, 255, 22);
+    }
+    
+    .red-glow {
+        border: 4px solid rgb(247, 4, 4);
+        box-shadow: 0 0 40px rgb(255, 48, 48);
+    }
+    .yellow-glow {
+        border: 4px solid rgb(246, 234, 11);
+        box-shadow: 0 0 40px rgba(255, 247, 0, 0.404);
+    }
+
     /* Score area**/
 
     .score-board {
@@ -428,6 +446,7 @@ body {
         text-align: center;
         padding: 50px;
     }
+    
     #messages {
         font-size: 2rem;
         margin-top: 0.5rem;
@@ -435,6 +454,7 @@ body {
         font-size: 1.8rem;
         text-align: center;
     }
+
     #reset-game {
         margin-top: 0.5rem;
         margin-bottom: 0.5rem;
@@ -459,6 +479,7 @@ body {
         width: 250px;
         margin: 0 auto;
     }
+
     .question {
         font-size: 1.6rem;
         margin-top: 0.5rem;
@@ -481,6 +502,7 @@ body {
         padding: 5px;
         display: block;
     }
+
     .timer-button {
         font-family: 'EB Garamont', serif;
         margin: 1.5rem;
@@ -493,5 +515,5 @@ body {
         box-shadow: 3px 3px #A3ACBD, 2px 2px #A3ACBD, 1px 1px #A3ACBD;
         padding: 10px;
         margin: 30px auto;
-    }
+    
 }
