@@ -34,3 +34,33 @@
   let timerInterval;
   let isTimerRunning = false;
   let clickCount = 0;
+
+  // functions
+  
+  //functions of the rules open and close
+
+  btn.addEventListener('click', function() {
+    rules.style.display = "block";
+    });
+   
+    span.addEventListener('click', function() {
+    rules.style.display = 'none';
+    });
+   
+    window.addEventListener('click', function(event) {
+    if (event.target == rules) {rules.style.display = "none";}
+    });
+  
+  //functions of the score area
+  
+    function resetScores() {
+    playerScore = 0;
+    computerScore = 0;
+    playerScore_span.innerText = 0;
+    computerScore_span.innerText = 0;
+    resulttime_p.innerText = "";
+    }
+   
+    resetGame_div.addEventListener('click', function() {
+    resetScores() 
+    });
