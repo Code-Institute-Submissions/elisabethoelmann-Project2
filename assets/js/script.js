@@ -64,3 +64,123 @@
     resetGame_div.addEventListener('click', function() {
     resetScores() 
     });
+
+      //functions of the picture choice area
+
+  function getComputerChoice() {
+    const choices = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
+    const randomNumber = (Math.floor(Math.random() * 5));
+    return choices[randomNumber];
+   } 
+
+  function getResult(playerChoice, computerChoice) {
+    if (playerChoice === computerChoice) return "It's a Tie !😐";
+    if (gameRules[playerChoice].beats.includes(computerChoice)) return "You Win !🔥";
+    return "You Lost !😒";
+  }
+  
+  function applyResult(playerChoice, computerChoice, result) {
+    const message = `${playerChoice} ${result} ${computerChoice}<br/>`;
+    //Define glowclass based on the results  
+      let glowClass ='';
+      switch (result) {
+        case "You Win !🔥":
+          playerScore++;
+            glowClass = 'green-glow';
+            break;
+        case "You Lost !😒":
+          computerScore++;
+            glowClass = 'red-glow';
+            break
+        default:
+            glowClass = 'yellow-glow';
+              break;
+        } 
+    resulttime_p.innerHTML = message;
+    document.querySelector(`[data-choice="${playerChoice}"]`).classList.add(glowClass);
+    setTimeout(() => {
+      document.querySelector(`[data-choice="${playerChoice}"]`).classList.remove(glowClass);
+    }, 500);
+  }
+
+  function updateScores(playerScore, computerScore) {
+    playerScore_span.innerText = playerScore;
+    computerScore_span.innerText = computerScore;
+  }
+  
+function game(playerChoice) {
+  const computerChoice = getComputerChoice();
+  const result = getResult(playerChoice, computerChoice);
+  //Apply the result to the UI
+  applyResult(playerChoice, computerChoice, result);
+  //Update scores displayed on the UI
+  updateScores(playerScore, computerScore);
+  }
+  
+  function main() {
+    choices.forEach(choice => {
+      choice.addEventListener('click', function() {
+        const playerChoice = this.dataset.choice;
+        console.log("YOU CLICKED ON " + playerChoice.toUpperCase());
+        game(playerChoice);
+      });
+    });
+  }
+  
+  main();
+
+   //functions of the timer area
+
+   function startTimer() {
+    clearInterval(timerInterval);
+    let second = 0;
+    let minute = 0;
+    let hour = 0;
+ 
+    timerInterval = setInterval(function() {
+       timer.innerHTML = 
+         (hour ? hour + ':' : '') +
+         (minute < 10 ? '0' + minute : minute) +
+         ':' +
+         (second < 10 ? '0' + second : second);
+         second++;
+         if (second == 60) {
+            minute++;
+            second = 0;
+         }
+         if (minute == 60) {
+            hour++;
+            minute = 0;
+         }
+    }, 1000);
+    isTimerRunning = true;
+   }
+ 
+   function stopAndShowTime() {
+    clearInterval(timerInterval);
+    isTimerRunning = false;
+   }
+ 
+   function resetTimer() {
+   clearInterval(timerInterval);
+   timer.innerHTML = '00:00';
+   clickCount = 0;
+   }
+ 
+   function startAndStopTimer() {
+   clickCount++;
+   if (clickCount === 2){
+     stopAndShowTime();
+   } else if (clickCount === 3) {
+     resetTimer();
+   }
+   else {
+     if (isTimerRunning) {
+     stopAndShowTime();
+   } else {
+         startTimer();
+       }
+     }
+   }
+   
+   
