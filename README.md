@@ -1,9 +1,9 @@
 # Project 2
 
 #### Introduction on how I approached the project:
-Due to Job time constraints (at least 10h/day between January and now), which can happen from time to time in my area (Drug development/Medical Oncology), 4 weeks to prepare for project 2 turned out to be a challenge. Therefore, when I thought about how to approach this project and googled, what the Rock-Paper-Scissors-Lizard-Spock Game was all about and what such a thing would look like, I was lucky to find the project from Danny22 on GitHub (https://dannyhsl22.github.io/Rock-Paper-Scissors-Lizard-Spock/).
+Due to Job time constraints (at least 10h/day between January and now), which can happen from time to time in my area (Drug development/Medical Oncology), 4 weeks to prepare for project 2 was a challenge. Therefore, when I thought about how to approach this project and googled, what the Rock-Paper-Scissors-Lizard-Spock Game was all about and what such a thing would look like, I was lucky to find the project from Danny22 on GitHub (https://dannyhsl22.github.io/Rock-Paper-Scissors-Lizard-Spock/).
 
-Although I very well understand, that one should develop one’s skills and ideas, given the circumstances, I nevertheless decided to use this as a template and guidance. Additionally, the option to discuss specific circumstances with a real person in the CI is difficult to achieve, unless one has technical problems, I decided, therefore, to move forward with the project with the help of this template to the best of my abilities in the timeframe which was left.
+Although I very well understand, that one should develop one’s skills and ideas, but given the circumstances, I nevertheless decided to use this as a template and guidance. Additionally, the option to discuss specific circumstances with a real person in the CI is difficult to achieve, unless one has technical problems, I decided, therefore, to move forward with the project with the help of this template to the best of my abilities in the timeframe which was left.
 
 #### What I decided to do:
 •   Slightly restructure the appearance according to my style (my mentor told me, that HTML and css in project 2 are of minor importance, therefore I stayed away from completely restructuring the whole page and only added and rearranged some parts)
@@ -42,25 +42,25 @@ The aim was to create an interactive game Rock, Paper, Scissors Lizard Spock whe
         * Button 3 will have the word Scissors, and an icon showing the scissors picture.
         * Button 4 will have the word Lizard, and an icon showing a Lizard picture.
         * Button 5 will have the word Spock, and an icon showing the Spock picture.
-        * Buttons have a glow effect to show the user they clicked the wanted button, with different colours based on winning, losing, or if it is a tie.
-Once the user has pressed one of the choice buttons, the code will generate a random choice to reflect the computer choice and the outcome of the choices will be shown immediately in the player action  area with the result for ease of use and also in the score area:
-        * If the player wins, add 1 to the player's score and update the results with "You win!".
-        * If the computer wins, add 1 to the computer's score and update the results with "You lost!".
+        * Buttons have a glow effect to show the player they clicked the wanted button, with different colours based on winning, losing, or if it is a draw.
+        * Once the player has pressed one of the choice buttons, the code will generate a random choice to reflect the computer choice and the outcome of the cchoices and results will also be shown immediately in the play-action area as well as in the scoring area.
+        * If the player wins, the code will add 1 to the player's score and update the results with "You win!".
+        * If the computer wins, the code will add 1 to the computer's score and update the results with "You lost!".
         * If the player and computer select the same choice, this will be a draw and the scores will not update. 
         The result display will show "It's a Tie!".
         * I have also introduced a reset button for the game to give the player the chance to start from scratch again.
 
-* The score area underneath the choices area, counts the results of the game showing in the “Player” and “Computer”  box underneath the images. The scores will increment by 1 when either the user or computer wins.
+* The score area underneath the choices area, counts the results of the game showing in the “Player” and “Computer”  box underneath the images. The scores will increment by 1, as explained above, when either the user or computer wins.
 
 * The Timer at the bottom of the screen gives the option to see how quickly you can beat the computer.
 There is a button for starting, stopping and resetting the timer to show how much the user can score to beat the computer:
         * On the 1st click, the time would start
         * On the 2nd click the timer will stop
         * On the 3rd click the the timer would reset itself 
-If the button is pressed once, the code will start the mmss process and the seconds will be counted and time will be displayed in the “Time taken” area 
+If the button is pressed once, the code will start counting the seconds and time will be displayed in the “Time taken” area 
 
 ### Strategy
-I liked the simplicity of the design, which was one of the reasons for me to choose this game as a template, which included minimalist but useful information with eye-catching images. I adapted the colours and images and reorganized the page so that the play action area with a clear instruction to the player comes first on top of the choices to be made so that it is easy to see the choices/results and score together area even on small screens without scrolling a lot. This website is aimed to attract all demographics with an interest in playing a quick simple game.
+I liked the simplicity of the design, which was one of the reasons for me to choose this game as a template, which included minimalist but useful information with eye-catching images. I adapted the colours and images and reorganized the page so that the play action area with a clear instruction to the player comes first on top of the choices to be made so that it is easy to see the choices/results and score area together even on small screens without scrolling a lot. This website is aimed to attract all demographics with an interest in playing a quick simple game.
 
 ### Scope
 For the players, I wanted to provide them with instructions on how to play the game with buttons, that have pictures to show the options. The game has a responsive design so it should function correctly across various devices such as Desktop, Mobiles, Tablet, and Laptop.
@@ -125,7 +125,7 @@ Underneath the title comes the "How to Play"  button, where the player can see t
         *This is the area of the pictures, on which the player will choose to click: either Rock Paper Scissors Lizard or Spock.
 
    * The scoreboard, showing the game results:
-        * When the player clicks on a picture option, it will show a coloured box shadow, green for a win, red for a loss and yellow for a draw and a short message, that shows your choice and if you won, lost, or it is a tie, as described above.
+        * When the player clicks on a picture option, it will show a coloured box shadow, green for a win, red for a loss and yellow for a draw and a short message, that shows your choice and if you won, lost, or it is a draw, as described above.
         * The JavaScript code chooses a random option for the computer player, displays the image relating to the computer’s choice, and then determines, who the winner is, which shows in the scoreboard and the result box above the images.
             * The player score: will increment by 1 when the player has won the game.
             * The score is updated for either the player or the computer depending on who won or lost or none of them (draw).
@@ -147,11 +147,11 @@ Underneath the title comes the "How to Play"  button, where the player can see t
     * I tested the "How to Play" button and it correctly displayed the information in a pop-up box, including an X to close the box.
     * The picture choice buttons worked properly and each showed the relevant glow functions.
     * The result was shown correctly in the scoreboard, adding 1 to the player score if the player won, adding 1 to the computer score if the computer won, and not changing, if it was a draw between the 2 players.
-    *Also the reset function of the scoreboard worked properly.
+    * Also the reset function of the scoreboard worked properly.
     * I then tested the timer by clicking once to start the timer, twice to stop the timer and 3 times to reset the timer. The Time taken was correctly updated every second.
   
 ### Bugs
-   •    No Bugs were found., no errors were reported
+   •    No Bugs were found, no errors were reported
 
 
  ### Validator Testing
