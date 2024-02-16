@@ -1,11 +1,11 @@
 # Project2
 
-## Introduction on how I approached the project:
+### Introduction on how I approached the project:
 Due to Job time constraints (at least 10h/day between January and now), which can happen from time to time in my area (Drug development/Medical Oncology), 4 weeks to prepare for project 2 turned out to be a challenge. Therefore, when I thought how to approach this project and googled, what the Rock-Paper-Scissors-Lizard-Spock Game was all about and how such thing would look like, I was lucky to find the project from Danny22 on github (https://dannyhsl22.github.io/Rock-Paper-Scissors-Lizard-Spock/).
 
 Although I very well understand, that one should develop one’s own skills and ideas, given the circumstances, I nevertheless decided to use this as a template and guidance. Additionally, the option to discuss specific circumstances with a real person in the CI is difficult to achieve, unless one has technical problems, I decided therefore to move forward with the project with the help of this template to the best of my abilities in the timeframe which was left.
 
-## What I did, was to:
+### What I did, was to:
 •	Slightly restructure the appearance according to my own style (my mentor told me, that html and css in project 2 are of minor importance, therefore I stayed away from completely restructuring the whole page and only added and rearranged some parts)
 •	Learn and understand the Java script codes of this template, which was not particularly easy, because it was completely unordered
 •	Rewrite the Java script codes to develop my own js codes and add new ones
@@ -76,22 +76,22 @@ I wanted the game to be eye catching and fun with instructions of how to play th
 #### Images
 The images came form various sources and the links can be found at the end of this document
 * as a rock I chose a picture of a crystal found on Etsy: 
-    ![image](assets/images/crystal.png)
+![image](assets/images/crystal.png)
 
 * as paper I chose a crumbled paper piece:
-    ![image](assets/images/paper.png)
+![image](assets/images/paper.png)
 
 * as scissor, I used an icon:
- ![image](assets/images/scissors.png)
+![image](assets/images/scissors.png)
 
  * The lizard picture  was taken from a glossy garden Gecko Ornament, one can buy at Amazon: 
-  ![image](assets/images/lizard.png)
+![image](assets/images/lizard.png)
 
 * The spock picture came from an Mr. Spock picture found on eBay: 
-  ![image](assets/images/spock.png)
+![image](assets/images/spock.png)
 
 ### Typography
-I decided to use "Annie use your Teleskope" for the header and EB Garamont for the main body text, both form from Google Fonts.
+I decided to use "Annie use your Teleskope" for the header and "EB Garamont" for the main body text, both form from Google Fonts.
 
 ### Technologies
 #### Languages
@@ -105,12 +105,10 @@ I decided to use "Annie use your Teleskope" for the header and EB Garamont for t
 ## Features
 ### Header
 
-The top of the page shows the game name 
-
 The top of the page shows the game name as the title of the game: Rock Paper Scissors Lizard Spock.
-I hose a playfull font that also cntrasts nicely from the light beige background and should also be appealing to children.
+I chose a playfull font that also contrasts nicely from the light beige background and should also be appealing to children.
 
-Underneath the the title come the "How to Play"  button, where the player can see the rules of the game:
+Underneath the title comes the "How to Play"  button, where the player can see the rules of the game:
     
 ![image](assets/media/title_%20and_how_to_play.png)
 
@@ -124,14 +122,14 @@ Underneath the the title come the "How to Play"  button, where the player can se
    #### The choices and scores area:
 
    * The choices area:
-        *This is the area of the pictures, on which the player can chose to click: either Rock Paper Scissors Lizard or Spock 
+        *This is the area of the pictures, on which the player will chose to click: either Rock Paper Scissors Lizard or Spock.
 
    * The score board, showing the game results:
-        * When the player clicks on a picture option, it will show a colored box shadow, green for a win, red for a loss and yellow for a tie and a short message that shows your choice and if you won, lost, or it is a tie.
-        * The JavaScript code chooses a random option for the computer player, displays the image relating to the computer’s choice, and then determine who the winner is, which shows in the score board and in the result box abve the images.
-            * Your score: will increment by 1 when the user has won the game.
-            * The score is updated for either the player or the computer depending on who won or lost or none of them (tie).
-        * if the player wants to rest the game, there is a reset button, which resets the game to 0:0.
+        * When the player clicks on a picture option, it will show a colored box shadow, green for a win, red for a loss and yellow for a draw and a short message, that shows your choice and if you won, lost, or it is a tie, as described above.
+        * The JavaScript code chooses a random option for the computer player, displays the image relating to the computer’s choice, and then determines, who the winner is, which shows in the score board and in the result box abve the images.
+            * The player score: will increment by 1 when the player has won the game.
+            * The score is updated for either the player or the computer depending on who won or lost or none of them (draw).
+        * if the player wants to reset the game, there is a reset button, which resets the game to whenever the button is clicked to 0:0.
         * The time taken to beat the computer is shown here underneath the score board, if the player has been using the timer at the bottom of the page.
         
          ![image](assets/media/choices%20and%20scoreboard.png)
@@ -143,16 +141,12 @@ Underneath the the title come the "How to Play"  button, where the player can se
     The start/stop/reset timer button will start on the 1st click, stop on the second click and reset itself on the 3rd click.
    
 ### Testing
-    I have tested this game in Google Chrome and Safari as well as on my iphone 15 mobile phone.
-
-    I then tested the How to Play button and it correctly displayed the information in a pop up box, including an X to close the box.
-
-    The picture choice buttons worked proplerly, showed each to the relavent glow functions.
-    The result was shown correctly in the score board, adding 1 to User Score if the user won, adding 1 to Computer Score if the computer won, and not changing if it was a draw.
-    Also the reset function of the score board worked properly.
-    
-    I then tested the timer by clicking once to start start the timer, twice to stop the timer and 3 times to reset the timer.
-    The Time taken was correctly updating every second.
+    * I have tested this game in Google Chrome and Safari as well as on my iphone15 mobile phone.
+    * I tested the "How to Play" button and it correctly displayed the information in a pop up box, including an X to close the box.
+    * The picture choice buttons worked properly and each showed the relavent glow functions.
+    * The result was shown correctly in the score board, adding 1 to the player score if the player won, adding 1 to computer score if the computer won, and not changing, if it was a draw between the 2 players.
+    *Also the reset function of the score board worked properly.
+    * I then tested the timer by clicking once to start start the timer, twice to stop the timer and 3 times to reset the timer. The Time taken was correctly updating every second.
   
 ### Bugs
    •	No Bugs were found., no erros reported
@@ -176,15 +170,15 @@ Underneath the the title come the "How to Play"  button, where the player can se
    6.	Website deployed.
    
    
-   Credits
-   Media
+### Credits
+   #### Media
    * all the pictures were found on the links given at the bottom of this page
 
    * a big thanks to Dannyhsl22 for providing unknowingly this template
 
    * a big thanks also to the CI tutors, who were very helpful in guiding me when I got stuck
    
-## sources of the images
+#### Sources of the images
 * as a rock I chose a picture of a crystal found on Etsy: 
 
     https://www.etsy.com/uk/listing/1492479757/rainbow-quartz-gem-set-of-10-clipart?gpla=1&gao=1&&utm_source=google&utm_medium=cpc&utm_campaign=shopping_uk_en_gb_e-craft_supplies_and_tools-other&utm_custom1=_k_CjwKCAiA8YyuBhBSEiwA5R3-E_q5pT3Rj0RpyxoVwSiks9TWsWL2PiXwYlEtXkw6Lhm3tq0kOSpY_BoCs9MQAvD_BwE_k_&utm_content=go_12576471592_123222676521_507650079487_pla-295462056907_c__1492479757engb_102858184&utm_custom2=12576471592&gad_source=1&gclid=CjwKCAiA8YyuBhBSEiwA5R3-E_q5pT3Rj0RpyxoVwSiks9TWsWL2PiXwYlEtXkw6Lhm3tq0kOSpY_BoCs9MQAvD_BwE
