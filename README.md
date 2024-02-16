@@ -1,11 +1,11 @@
-# Project2
+# Project 2
 
-### Introduction on how I approached the project:
+#### Introduction on how I approached the project:
 Due to Job time constraints (at least 10h/day between January and now), which can happen from time to time in my area (Drug development/Medical Oncology), 4 weeks to prepare for project 2 turned out to be a challenge. Therefore, when I thought how to approach this project and googled, what the Rock-Paper-Scissors-Lizard-Spock Game was all about and how such thing would look like, I was lucky to find the project from Danny22 on github (https://dannyhsl22.github.io/Rock-Paper-Scissors-Lizard-Spock/).
 
 Although I very well understand, that one should develop one’s own skills and ideas, given the circumstances, I nevertheless decided to use this as a template and guidance. Additionally, the option to discuss specific circumstances with a real person in the CI is difficult to achieve, unless one has technical problems, I decided therefore to move forward with the project with the help of this template to the best of my abilities in the timeframe which was left.
 
-### What I did, was to:
+#### What I decided to do:
 •	Slightly restructure the appearance according to my own style (my mentor told me, that html and css in project 2 are of minor importance, therefore I stayed away from completely restructuring the whole page and only added and rearranged some parts)
 •	Learn and understand the Java script codes of this template, which was not particularly easy, because it was completely unordered
 •	Rewrite the Java script codes to develop my own js codes and add new ones
@@ -15,7 +15,7 @@ I am aware, that my reliance on a template is probably not intended, but I decid
 
 [Please View the live project here](https://elisabethoelmann.github.io/Project2/)
 
-Rock paper scissors (commonly scissors, paper, rock or stone in Australia and New Zealand) is an intransitive  hand-game usually played between two people, in which each player simultaneously forms one of three shapes with an outstretched hand. These shapes are "rock" (a closed fist), "paper" (a flat hand), and "scissors" (a fist with the index finger and middle finger extended, forming a V). The earliest form of "rock paper scissors"-style game originated in China and was subsequently imported into Japan, where it reached its modern standardized form, before being spread throughout the world in the early 20th century. 
+Rock paper scissors (commonly scissors, paper, rock or stone in Australia and New Zealand) is an intransitive  hand-game usually played between two people, in which each player simultaneously forms one of three shapes with an outstretched hand. These shapes are "rock" (a closed fist), "paper" (a flat hand), and "scissors" (a fist with the index finger and middle finger extended, forming a V). The earliest form of "rock paper scissors"-style game originated in China and was subsequently imported into Japan, where it reached its modern standardized form, before being spread throughout the world in the early 20th century. [Wikipedia] (https://en.wikipedia.org/wiki/Rock_paper_scissors)
 
 Rock Paper Scissors Lizard Spock is the same game, however, expanded with lizard and spock. This expanded form of the game was first used in the Big Bang Theory TV series, to settle a dispute about what to watch on TV between Sheldon and Raj in "The Lizard-Spock Expansion" (see rules below)
 

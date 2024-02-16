@@ -178,7 +178,7 @@ body {
 
     .score-board {
         margin: 20px auto;
-        border: 3px solid: #040a84;
+        border: 3px solid #040a84;
         border-radius: 5px;
         height:120px;
         width: 300px;
@@ -191,7 +191,7 @@ body {
     }
 
     #player-score {
-        color; rgb(2, 2, 98);
+        color: rgb(2, 2, 98);
         text-align: center;
         font-size: 45px;
         padding: 30px 20px;
@@ -389,9 +389,9 @@ body {
 
     .score-board {
         margin: 20px auto;
-        border: 3px solid: #040a84;
+        border: 3px solid #040a84;
         border-radius: 5px;
-        height: 80px;px;
+        height: 80px;
         width: 240px;
         text-align: center;
         font-size: 26px;
@@ -423,7 +423,7 @@ body {
     }
 
     #player-score {
-        color; rgb(2, 2, 98);
+        color: rgb(2, 2, 98);
         text-align: center;
         font-size: 25px;
         padding: 8px;
@@ -515,5 +515,5 @@ body {
         box-shadow: 3px 3px #A3ACBD, 2px 2px #A3ACBD, 1px 1px #A3ACBD;
         padding: 10px;
         margin: 30px auto;
-    
+    }
 }
