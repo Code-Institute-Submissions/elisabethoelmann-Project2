@@ -6,9 +6,9 @@ Due to Job time constraints (at least 10h/day between January and now), which ca
 Although I very well understand, that one should develop one’s skills and ideas, but given the circumstances, I nevertheless decided to use this as a template and guidance. Additionally, the option to discuss specific circumstances with a real person in the CI is difficult to achieve, unless one has technical problems, I decided, therefore, to move forward with the project with the help of this template to the best of my abilities in the timeframe which was left.
 
 #### What I decided to do:
-•   Slightly restructure the appearance according to my style (my mentor told me, that HTML and css in project 2 are of minor importance, therefore I stayed away from completely restructuring the whole page and only added and rearranged some parts)
-•   Learn and understand the Java script codes of this template, which was not particularly easy, because it was completely unordered
-•   Rewrite the Java script codes to develop my JS codes and add new ones
+* Slightly restructure the appearance according to my style (my mentor told me, that HTML and css in project 2 are of minor importance, therefore I stayed away from completely restructuring the whole page and only added and rearranged some parts)
+* Learn and understand the Java script codes of this template, which was not particularly easy, because it was completely unordered
+* Rewrite the Java script codes to develop my JS codes and add new ones
 I am aware, that my reliance on a template is probably not intended, but I decided to submit this project nevertheless and be honest about it. My hope is, that at least, I could show, that I could write my own Java script codes, which Project 2 is all about. If it turns out that this is not enough, I would be grateful to be able to discuss next steps with somebody.
 
 # Rock-Paper-Scissors-Lizard-Spock - Game
