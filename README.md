@@ -116,45 +116,55 @@ Underneath the the title come the "How to Play"  button, where the player can se
 
    
 ### Body
-   "Start the action" area:
-   underneath the "How to play" box, comes the play/action area which tells the player to make their choices by clikcing on the pictures. When they do that, they can see immediatly the wondow popping up, showing on how successful they were:
+   #### "Start the action" area:
+
+   Underneath the "How to play" box, comes the start/play/action area, which tells the player to make their choices by clicking on the pictures. When they do that, they can see immediatly the window popping up, showing on how successful they were:
    ![image](assets/media/start_action_and_result%20area.png)
 
-   Choices area
-   •	Featured at the middle of the page showing the how to play button , score board, timer, game controls : Rock Paper Scissors Lizard Spock, and timer button
+   #### The choices and scores area:
 
-   Game Results
-   •	When the user clicks an option, the emoji button relating to their choice will show a colored box shadow .
-   •	The JavaScript code chooses a random option for the computer player, displays the image relating to the computer’s choice, and then determine who the winner is.
-   •	The winner is announced to the user immediately above the choice buttons, so that the player can see the result easily.
-   •	The score is updated for either the user or the computer depending on who won and is made easy to understand
-   Time taken
-   •	The time taken to beat the computer is shown here if the player has been using the timer.
-   Player area
-   •	Your choice: will display the users chosen option of either rock, paper, scissors, lizard or spock.
-   •	Player Image choice will glow the rock, paper, scissors, lizard and spock.
-   •	Your score: will increment by 1 when the user has won the game.
-   •	A short message that shows your choice and if you won, lost, or it is a tie.
-   Start/Stop/Reset timer – button
-   •	A message on top says How quickly can you beat the computer – set the timer:
-   o	Underneath is the start/stop/reset timer button  will start on the 1st click, stop on the second click and reset itself on the 3rd click
+   * The choices area:
+        *This is the area of the pictures, on which the player can chose to click: either Rock Paper Scissors Lizard or Spock 
+
+   * The score board, showing the game results:
+        * When the player clicks on a picture option, it will show a colored box shadow, green for a win, red for a loss and yellow for a tie and a short message that shows your choice and if you won, lost, or it is a tie.
+        * The JavaScript code chooses a random option for the computer player, displays the image relating to the computer’s choice, and then determine who the winner is, which shows in the score board and in the result box abve the images.
+            * Your score: will increment by 1 when the user has won the game.
+            * The score is updated for either the player or the computer depending on who won or lost or none of them (tie).
+        * if the player wants to rest the game, there is a reset button, which resets the game to 0:0.
+        * The time taken to beat the computer is shown here underneath the score board, if the player has been using the timer at the bottom of the page.
+        
+         ![image](assets/media/choices%20and%20scoreboard.png)
+
+#### The timer area
+
+    * A message above the timer bottom addresses the player: How quickly can you beat the computer – set the timer!       
+   * Start/Stop/Reset timer button:
+    The start/stop/reset timer button will start on the 1st click, stop on the second click and reset itself on the 3rd click.
    
-   Testing
-   I have tested this game in Google Chrome, Mozilla Firefox, Safari and Microsoft Edge, as well as on my Xiaomi mobile.
-   •	Clicked on Rock button and User Choice showed Rock and the computer generated choice was also shown. The Result was shown correctly.
-   •	Clicking on the Paper, Scissors, lizard and spock. button also showed the correct choice.
-   •	The User Score and Computer Score were also updating correctly, adding 1 to User Score if the user won, adding 1 to Computer Score if the computer won, and not changing if it was a draw.
-   •	I then tested the timer by clicking “Start timer”.
-   •	The Time taken was correctly updating every second.
-   •	I then tested the How to Play button and it correctly displayed the information in a pop up box, including an X to close the box.
-   Bugs
-   •	No Bugs were found.
-   Validator Testing
+### Testing
+    I have tested this game in Google Chrome and Safari as well as on my iphone 15 mobile phone.
+
+    I then tested the How to Play button and it correctly displayed the information in a pop up box, including an X to close the box.
+
+    The picture choice buttons worked proplerly, showed each to the relavent glow functions.
+    The result was shown correctly in the score board, adding 1 to User Score if the user won, adding 1 to Computer Score if the computer won, and not changing if it was a draw.
+    Also the reset function of the score board worked properly.
+    
+    I then tested the timer by clicking once to start start the timer, twice to stop the timer and 3 times to reset the timer.
+    The Time taken was correctly updating every second.
+  
+### Bugs
+   •	No Bugs were found., no erros reported
+
+
+ ### Validator Testing
         * W3C Markup Validation
         * W3C CSS Validation
+        * JSHint
 
    
-   Deployment
+### Deployment
    This website is hosted through GitHub and is deployed directly from the main branch. The deployed site will only update when new commits to the main branch have been pushed to GitHub.
    GitHub Pages
    The project was deployed to GitHub Pages using the following steps:
@@ -168,20 +178,12 @@ Underneath the the title come the "How to Play"  button, where the player can se
    
    Credits
    Media
-   •	Icons were taken from Font Awesome.
+   * all the pictures were found on the links given at the bottom of this page
+
+   * a big thanks to Dannyhsl22 for providing unknowingly this template
+
+   * a big thanks also to the CI tutors, who were very helpful in guiding me when I got stuck
    
-   
-   
-
-
-
-
-
-
-
-
-
-
 ## sources of the images
 * as a rock I chose a picture of a crystal found on Etsy: 
 
