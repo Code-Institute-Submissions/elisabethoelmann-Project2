@@ -156,8 +156,16 @@ Underneath the title comes the "How to Play"  button, where the player can see t
 
  ### Validator Testing
         * W3C Markup Validation
+![image](assets/media/w3cmarkupvalidation.png)
+
         * W3C CSS Validation
+![image](assets/media/w3ccssvalidation.png)
+
         * JSHint
+![image](assets/media/jshintjsvalidation.png)
+
+        *Esprima JS validation
+![image](assets/media/esprimajssyntaxvalidator.png)
 
    
 ### Deployment

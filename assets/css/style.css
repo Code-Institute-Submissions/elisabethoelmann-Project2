@@ -8,7 +8,7 @@
     box-sizing: border-box;
   }
 
-  /* general styles */
+/* general styles */
   header {
     background-color: beige;
     font-family: 'Annie Use Your Telescope';
@@ -120,7 +120,7 @@ body {
         font-weight: bolder;
     }
 
-    /* "Start-the-action" area */
+/* "Start-the-action" area */
 
     #play-action {
         text-align: center;
@@ -173,7 +173,6 @@ body {
         box-shadow: 0 0 40px rgba(255, 247, 0, 0.404);
     }
    
-  
     /* score area */
 
     .score-board {

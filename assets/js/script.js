@@ -62,7 +62,7 @@
   }
  
   resetGame_div.addEventListener('click', function() {
-  resetScores() 
+  resetScores(); 
   });
 
    //functions of the picture choice area
@@ -91,7 +91,7 @@
         case "You Lost !😒":
           computerScore++;
             glowClass = 'red-glow';
-            break
+            break;
         default:
             glowClass = 'yellow-glow';
               break;
