@@ -105,15 +105,17 @@ I decided to use "Annie use your Teleskope" for the header and EB Garamont for t
 ## Features
 ### Header
 
-    The top of the page shows the game name as the title of the game: Rock Paper Scissors Lizard Spock.
-    I hose a playfull font that also cntrasts nicely from the light beige background and should also be appealing to children.
+The top of the page shows the game name 
 
-    Underneath the the title come the "How to Play"  button, where the player can see the rules of the game:
+The top of the page shows the game name as the title of the game: Rock Paper Scissors Lizard Spock.
+I hose a playfull font that also cntrasts nicely from the light beige background and should also be appealing to children.
+
+Underneath the the title come the "How to Play"  button, where the player can see the rules of the game:
     
- ![image](assets/media/title_%20and_how_to_play.png)
+![image](assets/media/title_%20and_how_to_play.png)
 
    
-   ### Body
+### Body
    "Start the action" area:
    underneath the "How to play" box, comes the play/action area which tells the player to make their choices by clikcing on the pictures. When they do that, they can see immediatly the wondow popping up, showing on how successful they were:
    ![image](assets/media/start_action_and_result%20area.png)
