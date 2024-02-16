@@ -69,6 +69,7 @@ For the players, I wanted to provide them with instructions on how to play the g
 I wanted the game to be eye-catching and fun with instructions on how to play the game.
 
 ### Skeleton
+I started amending the design via PowerPoint.
 
 ![image](assets/media/webdesignframe.png)
 
