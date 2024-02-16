@@ -132,13 +132,15 @@ Underneath the title comes the "How to Play"  button, where the player can see t
         * if the player wants to reset the game, there is a reset button, which resets the game to whenever the button is clicked to 0:0.
         * The time taken to beat the computer is shown here underneath the score board, if the player has been using the timer at the bottom of the page.
         
-         ![image](assets/media/choices%20and%20scoreboard.png)
+![image](assets/media/choices_scoreboard.png)
 
 #### The timer area
 
     * A message above the timer bottom addresses the player: How quickly can you beat the computer – set the timer!       
    * Start/Stop/Reset timer button:
     The start/stop/reset timer button will start on the 1st click, stop on the second click and reset itself on the 3rd click.
+
+![image](assets/media/timer_area.png)
    
 ### Testing
     * I have tested this game in Google Chrome and Safari as well as on my iphone15 mobile phone.
